@@ -1,0 +1,228 @@
+@font-face {                  
+font-family: 'DPSDbeyond';
+src: url(https://humantooth.neocities.org/fonts/DPSDbeyond.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Afacad';
+src: url(https://humantooth.neocities.org/fonts/Afacad-Regular.woff2) format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip{
+	/* basic */
+	max-width:200px;
+	z-index:10;
+	margin:35px 5px 32px 22px;
+	/* style and design */
+	padding:8px;
+	background:#ffd700; /* fallback if rgba not supported */
+	background: #222222;
+    border-style: inset;
+    border-color: black rgba(255, 217, 0, 0.75) rgba(255, 217, 0, 0.75) black;
+	border-width:  0.1em 0.125em 0.125em 0.1em;
+    -moz-border-radius:0.25em;
+	-webkit-border-radius:0.25em;
+	border-radius:0.25em;
+	-moz-box-shadow:0.1em 0.1em 0.3em black;
+	-webkit-box-shadow:0.1em 0.1em 0.3em black;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	/* font */
+    font: 0.85em "Afacad", sans-serif;
+    text-shadow: 0 0 0.3em black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	line-height:16px;
+	color:white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5em;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+  font: 1.25em "Afacad", sans-serif;
+  margin: 0 2.5em 4em 0;
+  text-align: center;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+/*page layout*/
+.page {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  gap: 0.25em;
+  align-content: start;
+  margin: 0;
+}
+
+.page > div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/*END page layout*/
+p {
+  font: 1em "Afacad", sans-serif;
+  margin: 1em 0;
+}
+
+a {
+  font: 1em "Afacad", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font: 3em "DPSDbeyond", sans-serif;
+  color: gold;
+  margin: 0;
+  padding: 0;
+  transition: .2s ease;
+}
+
+h1:hover, h1:active {
+  font-size: 303%;
+  letter-spacing: 0.01em;
+}
+
+.headline{
+  font-size: 1.55em;
+  font-style: italic;
+  padding: 0.25em 0 0.1em;
+  margin: 0;
+  width: 75%;
+  letter-spacing: 0.01em;
+  transition: .1s ease;
+}
+.headline:hover, .headline:active {
+  color: gold;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.info {
+  position: sticky;
+  top: 11em;
+  margin-left: 3em;
+  text-align: left;
+  z-index: 1;
+}
+
+.info > a {
+  transition: .05s ease; 
+}
+
+.info > a:link, .info > a:visited {
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  line-height: 1.25em;
+}
+
+.info > a:hover, .info > a:active {
+  color: gold;
+  font-style: italic;
+  text-decoration: wavy underline;
+  font-size: 130%;
+}
+
+h4 {
+  font: 2em "DPSDbeyond", sans-serif;
+  letter-spacing: 0.1em;
+  color: gold;
+  margin: 2.5em 0 0.6em 0.4em;
+  padding: 0;
+  width: 40%;
+  transform: translateX(6.75em);
+  transition: .15s ease;
+}
+h4:hover, h4:active {
+  color: white;
+  letter-spacing: 0.15em;
+}
+
+.icons {
+  transition: .15s ease;
+  transform: translateX(-0.25em);
+  padding: 0.125em;
+  margin: 0.35em 0.25em 0.5em;
+}
+.icons:hover {
+  scale: 108%;
+}
+
+.webcontent {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.site {
+  margin: 0;
+  padding: 0;
+}
+.site > a > img {
+  border: 0.125em ridge black;
+  transition: .2s ease;
+}
+.site > a > img:hover {
+  scale: 103%;
+}
+
+.webcontent > a {
+  font: 1em "Afacad", sans-serif;
+  margin: 0.1em 0 1em 14em;
+  transition: .05s ease;
+  width: 40%;
+}
+.webcontent > a:hover, .webcontent > a:active {
+  letter-spacing: 0.02em;
+  scale: 105%;
+}
+
+.animcontent {
+  display: grid;
+  grid-template-columns: 34% 32% 34%;
+  gap: 0 0.5em;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.animcontent > a {
+  font: 1em "Afacad", sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 0.25em 0 1em;
+  align-content: center;
+  transition: .05s ease;
+}
+.animcontent > a:hover, .animcontent > a:active {
+  letter-spacing: 0.01em;
+  scale: 105%;
+}
+
+.videos {
+  transition: .2s ease; 
+}
+.videos:hover {
+  scale: 105%;
+}
+
+.aboutcontent > p {
+  padding: 0.25em 8em;
+}
+
+#me {
+  transition: .3s ease;
+}
+
+#me:hover {
+  scale: 103%;
+}
