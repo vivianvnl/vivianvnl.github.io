@@ -178,9 +178,9 @@ h4:hover, h4:active {
 
 .webcontent > a {
   font: 1em "Afacad", sans-serif;
-  margin: 0.1em 0 1em 14em;
+  margin: 0.1em 0 1em 19em;
   transition: .05s ease;
-  width: 40%;
+  width: 18%;
 }
 .webcontent > a:hover, .webcontent > a:active {
   letter-spacing: 0.02em;
